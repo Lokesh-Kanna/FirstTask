@@ -1,0 +1,58 @@
+<!--Cascaded Style Sheet-->
+
+<!--
+Types of CSS:
+1. Inline 
+2. Internal
+3. External
+
+The priority in which the css will be applied is:
+Inline > Internal > external
+
+Slectors:
+1. Class selector:
+    a. class-selector always starts with "."
+    b. Class selector can be applied to more than one element
+    c. multiple classes are allowed for a single element
+2. ID selector:
+    a. ID selector starts with "#"
+    b. ID should be unique for each and every element
+    c. Multiple ID is not allowed for a single element
+
+The priority in which the css will be applied is:
+id  > class 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--To link external css-->
+    <link rel="stylesheet" href="index.css" />
+    <!--
+    The link tag should be only in the head tag
+    -->
+    <!--Internal CSS-->
+    <style>
+      .div2 {
+        background-color: orange;
+      }
+      #div4 {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1">This is a division</div>
+    <br />
+    <div class="div2">This is division 2</div>
+    <br />
+    <!--Inline CSS-->
+    <div style="background-color: green">This is a division 3</div>
+    <br />
+    <div id="div4">this is a division 4</div>
+  </body>
+</html>
